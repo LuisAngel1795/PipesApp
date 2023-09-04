@@ -20,5 +20,21 @@
         {{fullName | titlecase}}
       </p-card>
     </div>
+    <div class="col-12 md:col-6">
+      <p-card header="titleCase">
+      <ul>
+        <li>fecha</li>
+        <li>customDate</li>
+      </ul>
+      </p-card>
+    </div>
+    <div class="col-12 md:col-6">
+      <p-card header="titleCase">
+        <ul>
+          <li>{{customDate}}</li>
+          <li>{{customDate | date}}</li>
+        </ul>
+      </p-card>
+    </div>
   </div>
 
