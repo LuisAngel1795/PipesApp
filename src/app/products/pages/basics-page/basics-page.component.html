@@ -1,0 +1,24 @@
+<p-panel header="Pipes basicos" class="p-1">
+  <p>
+    pipes incluidos usualmente en los commonModules
+  </p>
+</p-panel>
+
+  <div class="grid mt-2">
+    <div class="col-12 md:col-4">
+      <p-card header="UpperCase">
+        {{nameLower | uppercase}}
+      </p-card>
+    </div>
+    <div class="col-12 md:col-4">
+      <p-card header="LowerCase">
+        {{nameUpper | lowercase}}
+      </p-card>
+    </div>
+    <div class="col-12 md:col-4">
+      <p-card header="titleCase">
+        {{fullName | titlecase}}
+      </p-card>
+    </div>
+  </div>
+
