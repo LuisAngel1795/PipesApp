@@ -1,1 +1,22 @@
-<p>numbers-page works!</p>
+<p-panel header="Pipes numericos" class="p-1">
+  <p>pipes incluidos usualmente en los commonModules</p>
+</p-panel>
+
+<div class="grid">
+  <div class="col-12 md:col-4">
+    <p-card header="Ventas netas" subheader="del presente año">
+      {{ totalSells + 1234 | number : "1.2-2" }}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Ventas brutas" subheader="del presente año">
+      {{ totalSells | currency : "USD" }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="Ganancia porcentual" subheader="del presente año">
+      {{ percent | percent }}
+    </p-card>
+  </div>
+</div>

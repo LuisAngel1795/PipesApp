@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { MenuItem } from 'primeng/api';
 import { PrimeIcons } from 'primeng/api';
 
@@ -38,7 +39,14 @@ export class MenuComponent {
             },
             {
               label: 'Pipes personalizados',
-              icon: 'pi pi-cog'
+              icon: 'pi pi-cog',
+              items:[
+                  {
+                    label:'Custom pipes',
+                    icon:'pi pi-cog',
+                    routerLink:'custom'
+                  }
+              ]
           }
         ];
     }
